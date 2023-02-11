@@ -1,0 +1,196 @@
+:root {
+    --font: 'Heebo', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: black;
+    /* height: 1rem; */
+    font-family: var(--font);
+}
+
+main {
+    background-color: white;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 400px 1fr;
+    margin-top: 1rem;
+}
+
+.izquierda {
+    width: 400px;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    background-color: #353c44;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.apellido {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.cargo {
+    font-weight: 300;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 10rem;
+    margin: 1rem auto auto auto;
+}
+
+.contacto {
+    margin-top: 4rem;
+}
+
+.containerI {
+    margin-top: 3rem;
+}
+
+.distancia p {
+    line-height: 3;
+    font-size: 17px;
+}
+
+span {
+    color: white;
+}
+
+.color {
+    color: rgb(197, 182, 50);
+}
+
+.contacto i {
+    margin-right: 1rem;
+    color: white;
+}
+
+.redes i {
+    margin-right: 1rem;
+    color: white;
+}
+
+.derecha {
+    color: black;
+}
+
+.content-D {
+    margin: 2rem 2rem auto 2rem;
+}
+
+.exp-lab {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.experiencia {
+    margin-top: 3rem;
+}
+
+.exp-lab p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.exp-lab li {
+    font-size: 15px;
+}
+
+.education {
+    margin-top: 1rem;
+}
+
+.educacion {
+    margin-top: 3rem;
+}
+
+.habilidades {
+    margin-top: 3rem;
+}
+
+.habilidadesd {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.bar {
+    
+    border: 1px solid black;
+    height: 10px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.progreso {
+    background-color: #333c45;
+    height: 10px;
+    border-radius: 2px;
+    animation: llenar-barra 2s ease-in-out forwards;
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--llenado);
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .izquierda {
+        width: auto;
+    }
+
+    .habilidades {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        width: 500px;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 380px;
+    }
+}
